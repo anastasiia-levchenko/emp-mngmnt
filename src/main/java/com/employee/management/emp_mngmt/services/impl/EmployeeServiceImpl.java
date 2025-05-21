@@ -62,6 +62,7 @@ public class EmployeeServiceImpl implements EmployeeService
 		{
 			throw new EmployeeNotFoundException("The employee could not be found");
 		}
+		employeeRepo.deleteById(id);
 	}
 
 	private boolean employeeExists(final String email)
