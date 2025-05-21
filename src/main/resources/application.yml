@@ -1,0 +1,15 @@
+server:
+  port: 9192
+
+spring:
+  datasource:
+    username: empMngmntUser
+    password: tempDbPass
+    url: jdbc:mysql://localhost:3306/emp_mngmnt_db?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+
